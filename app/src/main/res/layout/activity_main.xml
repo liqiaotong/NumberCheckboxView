@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.liqiaotong.lib.view.NumberSwitchView
+        android:id="@+id/nsv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/nsvs"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:nsv_background_selected_color="@color/purple_700"
+        app:nsv_background_unselect_color="@color/purple_200"
+        app:nsv_background_width="5dp"
+        app:nsv_duration="300"
+        app:nsv_scale="0.8"
+        app:nsv_text="nsv"
+        app:nsv_text_selected_color="@color/purple_700"
+        app:nsv_text_size="30sp"
+        app:nsv_text_unselect_color="@color/purple_200" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nsvs"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nsv">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <com.liqiaotong.lib.view.NumberSwitchView
+                android:id="@+id/nsv1"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:nsv_background_selected_color="@color/purple_700"
+                app:nsv_background_unselect_color="@color/purple_200"
+                app:nsv_background_width="5dp"
+                app:nsv_duration="300"
+                app:nsv_scale="0.8"
+                app:nsv_text="1"
+                app:nsv_text_selected_color="@color/purple_700"
+                app:nsv_text_size="30sp"
+                app:nsv_text_unselect_color="@color/purple_200" />
+
+            <com.liqiaotong.lib.view.NumberSwitchView
+                android:id="@+id/nsv2"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:nsv_background_selected_color="@color/purple_700"
+                app:nsv_background_unselect_color="@color/purple_200"
+                app:nsv_background_width="5dp"
+                app:nsv_duration="300"
+                app:nsv_scale="0.8"
+                app:nsv_text="2"
+                app:nsv_text_selected_color="@color/purple_700"
+                app:nsv_text_size="30sp"
+                app:nsv_text_unselect_color="@color/purple_200" />
+
+            <com.liqiaotong.lib.view.NumberSwitchView
+                android:id="@+id/nsv3"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                app:nsv_background_selected_color="@color/purple_700"
+                app:nsv_background_unselect_color="@color/purple_200"
+                app:nsv_background_width="5dp"
+                app:nsv_duration="300"
+                app:nsv_scale="0.8"
+                app:nsv_text="3"
+                app:nsv_text_selected_color="@color/purple_700"
+                app:nsv_text_size="30sp"
+                app:nsv_text_unselect_color="@color/purple_200" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
