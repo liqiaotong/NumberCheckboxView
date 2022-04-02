@@ -8,4 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "NumberCheckbox"
 include ':app'
-include ':app:lib'
+include ':lib'
